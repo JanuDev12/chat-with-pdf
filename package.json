@@ -10,8 +10,22 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^4.5.2",
     "@astrojs/check": "^0.5.9",
+    "@astrojs/svelte": "^5.2.0",
+    "@astrojs/tailwind": "^5.1.0",
+    "astro": "^4.5.2",
+    "cloudinary": "^2.0.3",
+    "ollama": "^0.5.0",
+    "ollama-node": "^0.1.27",
+    "openai": "^4.29.0",
+    "svelte": "^4.2.12",
+    "svelte-file-dropzone": "^2.0.4",
+    "tailwindcss": "^3.4.1",
     "typescript": "^5.4.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.27",
+    "flowbite": "^2.3.0",
+    "flowbite-svelte": "^0.44.24"
   }
 }
