@@ -1,5 +1,5 @@
 import fs from 'node:fs/promises';
-import nodePath from 'node:path';
+import path from 'node:path';
 import { v2 } from 'cloudinary';
 
 v2.config({
@@ -8,7 +8,7 @@ v2.config({
   // es pública
   api_secret: "z07OowBoMR-zKUe8Te1uZcIKgiE"
 });
-const outputDir = nodePath.join(process.cwd(), "public/text");
+const outputDir = path.join(process.cwd(), "public/text");
 const uploadStream = async (buffer, options) => {
   return new Promise((resolve, reject) => {
     v2.uploader.upload_stream(options, (error, result) => {

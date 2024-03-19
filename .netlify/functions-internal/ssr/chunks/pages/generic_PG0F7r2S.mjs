@@ -1,6 +1,6 @@
-import { i as isRemoteImage, a as isESMImportedImage, b as isLocalService, D as DEFAULT_HASH_PROPS, c as isRemotePath, d as isRemoteAllowed } from '../astro/assets-service_n2itsPoy.mjs';
+import { i as isRemoteImage, a as isESMImportedImage, b as isLocalService, D as DEFAULT_HASH_PROPS, c as isRemotePath, d as isRemoteAllowed } from '../astro/assets-service_yV4xCWK8.mjs';
 import mime from 'mime/lite.js';
-import { A as AstroError, c as InvalidImageService, d as ExpectedImageOptions, E as ExpectedImage, F as FailedToFetchRemoteImageDimensions, e as createAstro, f as createComponent, g as ImageMissingAlt, r as renderTemplate, m as maybeRenderHead, h as addAttribute, s as spreadAttributes } from '../astro_FdOJeenr.mjs';
+import { A as AstroError, c as InvalidImageService, d as ExpectedImageOptions, E as ExpectedImage, F as FailedToFetchRemoteImageDimensions, e as createAstro, f as createComponent, g as ImageMissingAlt, r as renderTemplate, m as maybeRenderHead, h as addAttribute, s as spreadAttributes } from '../astro_fkQSNHXw.mjs';
 import 'html-escaper';
 import 'clsx';
 
@@ -820,8 +820,8 @@ async function getConfiguredImageService() {
   if (!globalThis?.astroAsset?.imageService) {
     const { default: service } = await import(
       // @ts-expect-error
-      '../astro/assets-service_n2itsPoy.mjs'
-    ).then(n => n.h).catch((e) => {
+      '../astro/assets-service_yV4xCWK8.mjs'
+    ).then(n => n.s).catch((e) => {
       const error = new AstroError(InvalidImageService);
       error.cause = e;
       throw error;
@@ -995,7 +995,7 @@ const $$Picture = createComponent(async ($$result, $$props, $$slots) => {
 }, "C:/Users/kiza2/Desktop/Dev/chat-pdf/chat-with-pdf/node_modules/astro/components/Picture.astro", void 0);
 
 const imageConfig = {"service":{"entrypoint":"astro/assets/services/sharp","config":{}},"domains":[],"remotePatterns":[]};
-					const outDir = new URL("file:///C:/Users/kiza2/Desktop/Dev/chat-pdf/chat-with-pdf/.vercel/output/static/");
+					const outDir = new URL("file:///C:/Users/kiza2/Desktop/Dev/chat-pdf/chat-with-pdf/dist/");
 					new URL("_astro", outDir);
 					const getImage = async (options) => await getImage$1(options, imageConfig);
 
